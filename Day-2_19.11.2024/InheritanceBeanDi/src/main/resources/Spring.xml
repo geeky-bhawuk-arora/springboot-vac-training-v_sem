@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Parent bean definition -->
+    <bean id="emp1" class="com.springLearning.Employee">
+        <property name="dept" value="CSE"></property>
+    </bean>
+
+    <!-- Child beans using 'parent' attribute -->
+    <bean id="emp2" parent="emp1">
+        <property name="name" value="Bhawuk"></property>
+    </bean>
+    
+    <bean id="emp3" parent="emp1">
+        <property name="name" value="Arora"></property>
+        <property name="dept" value="ECE"></property>
+    </bean>
+    
+    <!-- Parent bean definition -->
+    <bean id="st1" class="com.springLearning.Student">
+        <property name="cid" value="17"></property>
+    </bean>
+
+    <!-- Child beans using 'parent' attribute -->
+    <bean id="st2" parent="st1">
+        <property name="name" value="Bhawuk"></property>
+    </bean>
+    
+    <bean id="st3" parent="st1">
+        <property name="name" value="Arora"></property>
+        <property name="cid" value="18"></property>
+    </bean>
+    
+</beans>
