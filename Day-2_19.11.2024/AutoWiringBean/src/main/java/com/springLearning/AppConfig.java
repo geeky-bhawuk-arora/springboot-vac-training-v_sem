@@ -22,4 +22,11 @@ public class AppConfig {
 		emp.setName("Bhawuk");
 		return emp;
 	}
+	
+	@Bean
+	public Country country() {
+		Country c1 = new Country();
+		c1.setCountry("India");
+		return c1;
+	}
 }

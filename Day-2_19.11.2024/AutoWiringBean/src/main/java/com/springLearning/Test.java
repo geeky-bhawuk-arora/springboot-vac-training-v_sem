@@ -11,5 +11,10 @@ public class Test {
 		
 		Address addr2 = context.getBean(Address.class);
 		System.out.println(addr2);
+		
+		Country c2 = context.getBean(Country.class);
+		System.out.println(c2);
+		
+		
 	}
 }

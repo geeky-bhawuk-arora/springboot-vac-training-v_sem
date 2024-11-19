@@ -9,10 +9,14 @@ public class Employee {
 	@Qualifier("address")
 	@Autowired
 	private Address addr;
+	
+	@Qualifier("country")
+	@Autowired
+	private Country country;
 
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", addr=" + addr + "]";
+		return "Employee [name=" + name + ", addr=" + addr + ", country=" + country + "]";
 	}
 
 	public String getName() {
