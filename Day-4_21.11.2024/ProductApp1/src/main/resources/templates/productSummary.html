@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Summary</title>
+</head>
+<body>
+    <h2>Product Registered Successfully!</h2>
+    <h3>Product Details</h3>
+    <p><strong>Name:</strong> <span th:text="${product.name}"></span></p>
+    <p><strong>Description:</strong> <span th:text="${product.description}"></span></p>
+    <p><strong>Price:</strong> <span th:text="${product.price}"></span></p>
+
+    <a href="/register">Register Another Product</a>
+</body>
+</html>

@@ -15,7 +15,7 @@ public class EmployeeRunner implements CommandLineRunner {
 
     @Autowired
     private EmployeeRepo repository;
-
+ 
     @Override
     public void run(String... args) throws Exception {
         // Add records
